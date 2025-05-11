@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grocify Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-[url('images/image.png')] bg-center bg-cover px-6 md:px-28 py-5">
+    
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between">
+      <img src="/images/logo.png" alt="Logo image" class="w-40 cursor-pointer" />
+      <ul class="flex-1 text-center hidden md:flex justify-center space-x-6">
+        <li class="list-none"><a href="#" class="no-underline text-white px-2">Home</a></li>
+        <li class="list-none"><a href="#" class="no-underline text-white px-2">About</a></li>
+        <li class="list-none"><a href="#" class="no-underline text-white px-2">Services</a></li>
+        <li class="list-none"><a href="#" class="no-underline text-white px-2">Contact</a></li>
+      </ul>
+      <img src="/images/cart.png" alt="Cart image" class="w-8 cursor-pointer" />
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="flex flex-col xl:flex-row items-center mt-30 text-white">
+      <!-- Left Text -->
+      <div class="max-w-xl xl:w-1/2">
+        <h1 class="text-5xl font-semibold leading-normal">Groceries<br>delivery in <span class="font-light">15 mins</span></h1>
+        <p class="mt-4">Grocify offers a wide range of products, including fresh produce, meats, dairy, baked goods and non-perishable items.</p>
+        <div class="mt-10">
+          <a href="#" class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border border-transparent">Order Now</a>
+          <a href="#">Download App <span class="text-lg inline-block rotate-90">&#10148;</span></a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="mt-10 xl:mt-0 xl:w-1/2 flex justify-end">
+        <img src="/images/grocery-image.png" alt="Grocery Image" class="w-full max-w-md xl:max-w-lg " />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
